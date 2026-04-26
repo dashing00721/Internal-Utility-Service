@@ -10,7 +10,7 @@ def client():
 
 def test_home_status_code(client):
     res = client.get('/')
-    assert res.status_code == 999
+    assert res.status_code == 200
 
 
 def test_home_returns_json(client):
@@ -32,7 +32,7 @@ def test_home_has_environment(client):
 
 def test_users_status_code(client):
     res = client.get('/users')
-    assert res.status_code == 999
+    assert res.status_code == 200
 
 
 def test_users_returns_list(client):
